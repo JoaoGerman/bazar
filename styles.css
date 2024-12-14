@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(135deg, #ff4e50, #1c1c88) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    font-family: 'Chewy', cursive;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.title-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rounded-header {
+    border-radius: 25px;
+}
+
+.glass-header {
+    border: none;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.glass-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-section {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    padding: 0 15px;
+}
+
+.card-section.show {
+    max-height: 1000px;
+    padding: 15px;
+    transition: max-height 0.5s ease-in, padding 0.5s ease-in;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    padding: 10px;
+}
